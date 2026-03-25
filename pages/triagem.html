@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde em Foco | Triagem</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/forms.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container layout-header">
+            <h1>Saúde em Foco</h1>
+            <nav>
+                <a href="../index.html">Início</a>
+                <a href="./pesoIdeal.html">Peso Ideal</a>
+                <a href="./triagem.html" class="active">Triagem</a>
+                <a href="./redeAtendimento.html">Postos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-container">
+            <h2>Triagem de Sintomas</h2>
+            <p>Responda com sinceridade para uma pré-avaliação de urgência.</p>
+            
+            <form id="form-triagem">
+                <div class="pergunta">
+                    <label>Você está sentindo dor forte no peito ou falta de ar grave?</label>
+                    <select id="urgencia-extrema" required>
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                </div>
+
+                <div class="pergunta">
+                    <label>Qual o seu nível de dor atual? (0 a 10)</label>
+                    <input type="number" id="nivel-dor" min="0" max="10" value="0">
+                </div>
+
+                <div class="pergunta">
+                    <label>Você está com febre acima de 38.5°C?</label>
+                    <select id="febre">
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="calcularTriagem()">Avaliar Urgência</button>
+            </form>
+
+            <div id="resultado-triagem" class="hidden">
+                <h3 id="titulo-resultado"></h3>
+                <p id="mensagem-resultado"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>Projeto de Extensão - Tema: Cuidado em Saúde</strong></p>
+            <p>Desenvolvido por:<br>João Vitor Westphalen da Silva<br>Eduardo Francisco da Silva Barbosa<!--, [Nome 3], [Nome 4]--></p>
+        </div>
+    </footer>
+
+    <script src="../js/triagem.js"></script>
+</body>
+</html>

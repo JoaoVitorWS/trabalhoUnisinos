@@ -59,3 +59,39 @@ body {
     padding: 20px 0;
     margin-top: auto;
 }
+
+/*Eduardo*/
+table{
+    text-align: center;
+}
+select,button{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+select{
+    color: #0056b3;
+    font-weight: bold;
+    font-size: 30px;
+}
+button{
+    background-color: #0056b3;
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+th{
+     background-color: #0056b3;
+    color:white;
+}
+td{
+    border: 1px solid #0056b3;
+    background-color: white;
+    color: #0056b3;
+    font-weight: bold;
+}
+/*Eduardo*/

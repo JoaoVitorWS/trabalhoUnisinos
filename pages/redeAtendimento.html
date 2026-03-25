@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde em Foco | Início</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container layout-header">
+            <h1>Saúde em Foco</h1>
+            <nav>
+                <a style="color: white;" href="../index.html" class="active">Início</a>
+                <a href="pesoIdeal.html">Peso Ideal</a>
+                <a href="triagem.html">Triagem</a>
+                <a style="color: rgb(56, 200, 153);" href="redeAtendimento.html">Postos</a>
+            </nav>
+        </div>
+    </header>
+ 
+    <main class="container main-content">
+        <section class="hero">
+            <h2>Rede de Atendimento</h2>
+            <p>Selecione sua cidade abaixo para descobrir os postos de saude mais proximos</p>
+        </section>
+
+        
+        <!--Eduardo-->
+            <select oninput="escondeResultado()" id="cidade">
+                <option>Porto Alegre</option>
+                <option>Canoas</option>
+                <option>Esteio</option>
+                <option>Sapucaia do Sul</option>
+                <option>São Leopoldo</option>
+                <option>Novo Hamburgo</option>
+            </select>
+            <br><br>
+            <button onclick="buscarPostos()">Buscar</button>
+            
+
+            <br><br>
+            <table id="tabposto" hidden>
+                <thead>
+                    <tr>
+                        <th>Posto</th>
+                        <th>Distância</th>
+                        <th>Mapa</th>
+                    </tr>
+                </thead>
+                <tbody id="listaPostos"></tbody>
+            </table>
+        <!--Eduardo-->
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>Projeto de Extensão - Tema: Cuidado em Saúde</strong></p>
+            <p>Desenvolvido por:<br>João Vitor Westphalen da Silva<br>Eduardo Francisco da Silva Barbosa<!--, [Nome 3], [Nome 4]--></p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
